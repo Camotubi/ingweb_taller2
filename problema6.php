@@ -64,7 +64,7 @@ switch($action)
 
 function printCellsInput($n)
 {
-	echo '<form method="POST"><table>
+	echo '<form method="POST"><table class="table table-condensed">
 		<input type="hidden" name="action" value="analyze">
 		<tr>
 			<th>Numero de censo</th>
@@ -87,23 +87,18 @@ function printCellsInput($n)
 		</tr>';
 	}
 
-	echo '</table><input type="submit" value ="Enviar"></form>';
+	echo '</table><input type="hidden" name = "n" value="'.$n.'"><input type="submit" value ="Enviar"></form>';
 
 }
+
+
 function analyze($n)
 {
-  for ($i=0; $i < $n; $i++) {
-    $prim=($prim + $_POST["primaria[$i]"]);
-    $sec=($sec + $_POST["secundaria[$i]"]);
-    $tech=($tech + $_POST["tech[$i]"]);
-    $pro=($pro + $_POST["pro[$i]"]);
-    $post=($post + $_POST["post[$i]"]);
-  }
-  $prim=($prim/$n)*100;
-  $sec=($sec/$n)*100;
-  $tech=($tech/$n)*100;
-  $pro=($pro/$n)*100;
-  $post=($post/$n)*100;
+    $prim=100*count($_POST["primaria"])/intval($_POST["n"]);
+    $sec=100*count($_POST["secundaria"])/intval($_POST["n"]);
+    $tech=100*count($_POST["tech"])/intval($_POST["n"]);
+    $pro=100*count($_POST["pro"])/intval($_POST["n"]);
+    $post=100*count($_POST["post"])/intval($_POST["n"]);
   echo "Porcentajes:<br>";
   echo "Primaria: $prim%<br>";
   echo "Secundaria: $sec%<br>";
