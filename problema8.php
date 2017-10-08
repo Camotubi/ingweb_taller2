@@ -97,7 +97,7 @@ function printCellsInput($n)
 function analyze()
 {
 	$output = array();
-	echo "Numero de Encuestas que cumplen la condicion:"
+	echo "Numero de Encuestas que cumplen la condicion:";
 	for($i = 0; $i<count($_POST["nCenso"]);$i++)
 	{
 
