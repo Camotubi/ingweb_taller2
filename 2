@@ -16,13 +16,13 @@
 					<a href="index.php"><img src="img/home3.png"> Inicio</a>
 				</li>
 				<li>
-					<a href = problema1.php>Problema 1</a>
+					<a href = metodoGet.php>Metodo Get</a>
 				</li>
 				<li>
-					<a href = problema5.php>Problema 5</a>
+					<a href = metodoPost.php>Metodo Post</a>
 				</li>
 				<li>
-					<a href = problema6.php>Problema 6</a>
+					<a href = enviar.php>Enviar/Recibir Datos</a>
 				</li>
 				<li>
 					<a href = problema7.php>Problema 7</a>
@@ -91,20 +91,18 @@ function printCellsInput($n)
 		</tr>';
 	}
 
-	echo '</table><input type="submit" value ="Enviar"></form>';
+	echo '<input type="submit"></table></form>';
 
 }
 function analyze()
 {
 	$output = array();
-	echo "Numero de Encuestas que cumplen la condicion:"
 	for($i = 0; $i<count($_POST["nCenso"]);$i++)
 	{
 
 		if(intval($_POST["age"][$i])>=18 && intval($_POST["age"][$i])<=25 && $_POST["sex"][$i]=="F" && $_POST["civil"][$i]=="a")
 		{
 			array_push($output,$_POST["nCenso"][$i]);
-			
 			echo $_POST["nCenso"][$i].'<br>';
 		}
 	}
@@ -115,20 +113,10 @@ function analyze()
 }
 function def()
 {
-	echo '
-		<h3> Problema 8</h3>
-		<p>Se tienen N encuestas con informacion del censo de una muestra de personas de una ciudad, cada tarjeta tiene los siguientes datos:</p>
-		<ol>
-			<li>Numero de censo</li>
-			<li>Sexo</li>
-			<li>Edad</li>
-			<li>Estado civil(a- Soltero, b-Casado,c-Viudo, d-Divorciado)</li>
-		</ol>
-		<p>Diseñe un programa que lea todos estos datos, e imprima el numero de censo de todas las jovenes solteras que esten entre 18 y 25 años.</p>
-		<form method="POST">
+	echo '<form method="POST">
 		<input type ="hidden" name="action" value="setN">
-		<label>Encuestas a ingresar:</label><input type="number" name="n" required>
-		<input type="submit" value="Siguiente">
+		<input type="number" name="n" required>
+		<input type="submit">
 		
 		
 		</form>
@@ -166,7 +154,7 @@ function def()
 </div>
 			<footer class="footer">
 				<div class="container">
-					<p >	Creado por: Roderik Acevedo 8-906-2070, Roy Henriquez 8-928-1689,Carlos Tuñón  8-916-809, Grupo: 1SF-131</p>
+					<p >	Creado por: Roderik Acevedo 8-906-2070, Roy Henriquez 8-928-1689,Carlos Tuñón , 8-916-809, Grupo: 1SF-131</p>
 				</div>
 			</footer>
 </body>
