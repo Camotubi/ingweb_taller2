@@ -17,19 +17,19 @@
 					<a href="index.php"><img src="img/home3.png"> Inicio</a>
 				</li>
 				<li>
-					<a href = metodoGet.php>Metodo Get</a>
+					<a href = problema1.php>Problema 1</a>
 				</li>
 				<li>
-					<a href = metodoPost.php>Metodo Post</a>
+					<a href = problema5.php>Problema 5</a>
 				</li>
 				<li>
-					<a href = enviar.php>Enviar/Recibir Datos</a>
+					<a href = problema6.php>Problema 6</a>
 				</li>
 				<li>
-					<a href = formularioRespuestaMisma.php>Form respuesta misma pagina</a>
+					<a href = problema7.php>Problema 7</a>
 				</li>
 				<li>
-					<a href = formularioRespuestaOtraPagina.php>Form Respuesta otra Pagina</a>
+					<a href =problema8.php>Problema 8</a>
 				</li>
 			</ul>
 		</nav>
