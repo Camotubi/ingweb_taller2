@@ -68,7 +68,7 @@
 </div>
 			<footer class="footer">
 				<div class="container">
-					<p >	Creado por: Carlos Moisés Tuñón Biddy, 8-916-809, Grupo: 1SF-131</p>
+					<p >	Creado por: Roderik Acevedo 8-906-2070, Roy Henriquez 8-928-1689,Carlos Tuñón  8-916-809, Grupo: 1SF-131</p>
 				</div>
 			</footer>
 </body>
